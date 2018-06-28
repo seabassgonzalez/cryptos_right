@@ -7,7 +7,7 @@ class Index extends Component {
 			<div>
 				<Navbar />
 				<div>
-					<p>Hello Next.js</p>
+					<h1>Welcome to Exploratory</h1>
 				</div>
 			</div>
 		)
