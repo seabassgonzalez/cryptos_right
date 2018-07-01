@@ -1,28 +1,30 @@
-// import Navbar component
+// import Layout component
 // import React and Component from react
 
 // class Index extending Component
 	// render
 		// return
-			// div
-				// Navbar component
+			// Layout wrapper
 				// div
-					// h1 welcome message
+					// Navbar component
+					// div
+						// h1 welcome message
 
 // export default Index
 
-import Navbar from '../components/navbar';
+import Layout from '../components/layout';
 import React, { Component } from 'react';
 
 class Index extends Component {
 	render(){
 		return (
-			<div>
-				<Navbar />
+			<Layout>
 				<div>
-					<h1>Welcome to Exploratory</h1>
+					<div>
+						<h1>Welcome to Exploratory</h1>
+					</div>
 				</div>
-			</div>
+			</Layout>
 		)
 	}
 };

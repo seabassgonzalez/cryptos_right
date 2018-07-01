@@ -1,27 +1,29 @@
-// import Navbar
+// import Layout
 // import React and Component from react
 
 // class About extending component
 	// render
-		// div
-			// Navbar component
-				// div
-					// paragraph describing the project
+		// Layout wrapper
+			// div
+				// Navbar component
+					// div
+						// paragraph describing the project
 
 // export default About component
 
-import Navbar from '../components/navbar';
+import Layout from '../components/layout';
 import React, { Component } from 'react';
 
 class About extends Component {
 	render(){
 		return (
-			<div>
-				<Navbar />
+			<Layout>
 				<div>
-					<p>This is an initial exploration of next js</p>
+					<div>
+						<p>This is an initial exploration of next js</p>
+					</div>
 				</div>
-			</div>
+			</Layout>
 		)
 	}
 };
