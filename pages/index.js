@@ -21,7 +21,7 @@ class Index extends Component {
 			<Layout>
 				<div>
 					<div>
-						<h1>Welcome to Exploratory</h1>
+						<h1>Welcome to Crypto's Right</h1>
 					</div>
 				</div>
 			</Layout>

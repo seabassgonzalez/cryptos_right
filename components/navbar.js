@@ -22,7 +22,7 @@ class Navbar extends Component {
 		return (
 			<nav className="navbar navbar-expand navbar-dark bg-dark mb-4">
 				<div className="container d-flex">
-					<a className="navbar-brand" href="#">Next JS</a>
+					<a className="navbar-brand" href="#">Crypto's Right</a>
 					<div className="collapse navbar-collapse d-flex flex-row-reverse">
 						<ul className="navbar-nav">
 							<li className="nav-item">

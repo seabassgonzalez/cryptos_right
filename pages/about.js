@@ -20,7 +20,7 @@ class About extends Component {
 			<Layout>
 				<div>
 					<div>
-						<p>This is an initial exploration of next js</p>
+						<p>Simple Bitcoin Price Checker using Coindesk Crypto API</p>
 					</div>
 				</div>
 			</Layout>
