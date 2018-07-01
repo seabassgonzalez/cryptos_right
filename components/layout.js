@@ -21,7 +21,9 @@ const Layout = (props) => (
 			<link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css"/>
 		</Head>
 		<Navbar />
+		<div className="d-flex justify-content-center">
 		{props.children}
+		</div>
 	</div>
 );
 
