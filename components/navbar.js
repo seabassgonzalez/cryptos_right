@@ -1,3 +1,23 @@
+// import Link from next
+// import React and Component from react
+
+// class Navbar extending Component
+	// render
+		// return
+			// div
+				// ul
+					// li for Home at / root route
+					// li for About at /about route
+				// style jsx within component
+					// ul styling
+						// background color list-style and display set to flex
+					// ul li
+						// font-size and margin-right
+					// ul li a
+						// color and text-decoration
+
+// export default Navbar						
+
 import Link from 'next/link';
 import React, { Component } from 'react';
 
