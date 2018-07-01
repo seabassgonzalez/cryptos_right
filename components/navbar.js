@@ -4,17 +4,13 @@
 // class Navbar extending Component
 	// render
 		// return
-			// div
-				// ul
-					// li for Home at / root route
-					// li for About at /about route
-				// style jsx within component
-					// ul styling
-						// background color list-style and display set to flex
-					// ul li
-						// font-size and margin-right
-					// ul li a
-						// color and text-decoration
+			// div bootstrap className container
+				// a tag className set to navbar-brand
+				// div className collapse navbar-collapse
+					// ul className navbar-nav m1-auto
+						// li className nav-item
+							// Link a tag className nav-link for Home route
+							// Link a tag className nav-link for About route
 
 // export default Navbar						
 
@@ -24,30 +20,25 @@ import React, { Component } from 'react';
 class Navbar extends Component {
 	render(){
 		return (
-			<div>
-				<ul>
-					<li><Link href="/"><a>Home</a></Link></li>
-					<li><Link href="/about"><a>About</a></Link></li>
-				</ul>
-				<style jsx>{`
-					ul {
-						background: #34495e;
-						color: #fff;
-						list-style: none;
-						display: flex;
-					}
-
-					ul li {
-						font-size: 16px;
-						margin-right: 20px;
-					}
-
-					ul li a {
-						color: #fff;
-						text-decoration: none;
-					}
-				`}</style>
-			</div>
+			<nav className="navbar navbar-expand navbar-dark bg-dark mb-4">
+				<div className="container d-flex">
+					<a className="navbar-brand" href="#">Next JS</a>
+					<div className="collapse navbar-collapse d-flex flex-row-reverse">
+						<ul className="navbar-nav">
+							<li className="nav-item">
+								<Link href="/">
+									<a className="nav-link">Home</a>
+								</Link>
+							</li>
+							<li className="nav-item">
+								<Link href="/about">
+									<a className="nav-link">About</a>
+								</Link>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
 		)
 	}
 }
