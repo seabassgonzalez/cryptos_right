@@ -9,8 +9,16 @@
     "start": "next start"
   },
   "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seabassgonzalez/nextJS_exploratory.git"
+  },
+  "author": "seabassgonzalez",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seabassgonzalez/nextJS_exploratory/issues"
+  },
+  "homepage": "https://github.com/seabassgonzalez/nextJS_exploratory#readme",
   "dependencies": {
     "isomorphic-unfetch": "^2.0.0",
     "next": "^6.0.3",

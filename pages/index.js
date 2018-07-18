@@ -17,14 +17,14 @@ import React, { Component } from 'react';
 import Layout from '../components/layout';
 import Link from 'next/link';
 import fetch from 'isomorphic-unfetch';
+import Prices from '../components/prices';
 
 class Index extends Component {
 	static async getInitialProps(){
-		const res = await fetch('https://api.tvmaze.com/search/shows?q=seinfeld');
+		const res = await fetch('https://api.coindesk.com/v1/bpi/currentprice.json');
 		const data = await res.json();
-		console.log('show data fetched, count', data.length);
 		return{
-			shows:data
+			bpi:data.bpi
 		}	
 	}
 	render(){
@@ -32,16 +32,7 @@ class Index extends Component {
 			<Layout>
 				<div>
 					<h1>Welcome to Crypto's Right</h1>
-					<h1>Temporary Seinfeld TV Show Get Initial Props Practice</h1>
-					<ul>
-						{this.props.shows.map(({show}) => (
-							<li key={show.id}>
-								<Link as={`/p/${show.id}`} href={`/post?id=${show.id}`}> 
-									<a>{show.name}</a>
-								</Link>
-							</li>
-						))}
-					</ul>
+					<Prices bpi={this.props.bpi} />
 				</div>
 			</Layout>
 		)
