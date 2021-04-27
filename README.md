@@ -1,1 +1,1 @@
-# nextJS_exploratory
+# Crypto's Right
